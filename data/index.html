@@ -14,6 +14,7 @@
         <!-- Development ONLY END -->
 
         <link rel="icon" href="data:,">
+        <link rel="stylesheet" type="text/css" href="icons.css">
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
 
@@ -23,6 +24,7 @@
                 <div class="header-container">
                     <div class="header-items">
                         <h2>Lumenizer</h2>
+                        <div class="chip off"><i class="light-bulb light"></i> Family Room</div>
                         <div class="version">v1.0</div>
                     </div>
                 </div>
@@ -31,13 +33,42 @@
             </header>
             <nav>
                 <ul id="main-menu">
-                    <li>Option 1</li>
-                    <li>Option 2</li>
+                    <li class="active">Device</li>
+                    <li>WiFi</li>
+                    <li>E1.31</li>
                 </ul>
             </nav>
             <main>
-                <section id="button-test">This is a card</section>
-                <section>This is another card</section>
+                <section>
+                    <div class="grid-large">
+                        <div class="form-section">
+                            <label or="device-name">Device Name</label>
+                            <input type="text" id="device-name" name="device-name"
+                                title="Plain text ID to help identify your device.">
+                        </div>
+                    </div>
+
+                    <div class="grid-small">
+                        <div class="form-section">
+                            <label or="device-name">Universe</label>
+                            <input type="number" id="device-name" name="device-name"
+                                title="Plain text ID to help identify your device.">
+                        </div>
+                        <div class="form-section">
+                            <label or="device-name">Start Channel</label>
+                            <input type="number" id="device-name" name="device-name"
+                                title="Plain text ID to help identify your device.">
+                        </div>
+                        <div class="form-section">
+                            <label or="device-name">Universe Boundary</label>
+                            <input type="number" id="device-name" name="device-name"
+                                title="Plain text ID to help identify your device.">
+                        </div>
+                    </div>
+                    <div class="action-buttons">
+                        <button class="primary">Save Changes</button>
+                    </div>
+                </section>
             </main>
         </div>
         <script type="application/javascript" src="react.production.min.js"></script>
